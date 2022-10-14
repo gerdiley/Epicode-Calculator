@@ -1,0 +1,194 @@
+/* mio reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+/* stilizzo body */
+
+body{
+    background-image: linear-gradient(to bottom right, rgba(79,51,176,1), rgba(210,53,165)) ;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* stilizzo titolo */
+header .title{
+    background-color: rgb(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 20px;   
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.banner{
+
+border : 2px solid rgb(188, 28, 28);
+padding: 20px;
+display: inline-block;
+border-radius: 20px;
+color: aliceblue;
+margin-bottom: 30px;
+box-shadow: 0 0 15px 0px rgb(29, 25, 25);
+}
+.banner span{
+    color: rgb(210, 45, 45);
+}
+
+/* stilizzo container generale */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+
+
+/* stilizzo calcolatore */
+
+.calcolatore{
+
+    background-color: rgb(0,0,0,0.4);
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 
+    "display display"
+    "advanced advanced"
+    "tastierino tastierino";
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px;
+    align-items:
+}
+
+.display-container{
+    grid-area: display;
+} 
+
+.check{
+    grid-area: advanced;
+}
+
+
+.tastierino{
+    grid-area: tastierino;
+    text-align: center;
+}
+
+/* stilizzo display */
+
+.display-container #display{
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(0,0,0,0.3);
+    width: auto;
+    height: 50px;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 15px 1px rgb(0,0,0,0.5);
+    color: rgb(242, 232, 232);
+}
+
+/* stilizzo buttons */
+
+.button {
+    background-color: rgb(182, 132, 132);
+    height: 45px;
+    width: 45px;
+    border: 0;
+    border-radius: 50%;
+    margin: 7px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px 1px rgb(0,0,0,0.5);
+    font-size: 1.2em;
+    color: rgb(93, 59, 59);
+    transition: box-shadow 0.2s ease;
+    transition: backgroud-color 0.5 ease;
+
+}
+
+#uguale{
+    width: 90%;
+    border-radius:20px;
+    background-color: rgb(67, 159, 159);
+   
+}
+#addizione{
+    height: 100px;
+    border-radius: 20px;
+    margin: 7px;
+}
+
+#C {
+    color: rgb(162, 15, 15);
+    background-color: rgb(210, 122, 122);
+}
+
+#addizione, #divisione, #moltiplicazione, #sottrazione {
+    background-color: rgb(104, 145, 104);
+    color: rgb(18, 53, 18);
+}
+
+.button:hover{
+    transform: scale(0.97);
+    background-color:  rgba(182, 132, 132, 0.8);
+    box-shadow: 5px 5px 10px 0px rgb(0,0,0);
+}
+
+#addizione:hover, #divisione:hover, #moltiplicazione:hover, #sottrazione:hover {
+    background-color: rgb(104, 145, 104, 0.8);
+}
+
+
+
+/* stilizzo calcoli avanzati */
+.calcolatore .tastierino .advanced-box{
+    display: flex;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: height 1s ease-out;
+
+}
+
+.calcolatore .tastierino .advanced-box .advanced{
+    background-color: rgb(183, 69, 69);
+    color: rgb(192, 176, 155);
+    box-shadow:5px 5px 5px 1px rgb(0,0,0,0.5);
+
+} 
+
+#check:checked ~ .advanced-box{
+    height: 60px;
+}
+
+.checkbox #check{
+    display: none;
+}
+
+.checkbox label{
+    font-size: 2rem;
+}
+

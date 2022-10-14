@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <title>Calcolatrice</title>
+
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+ 
+<body>
+
+    <header>
+        <div class="title">
+            <h1>Calcolatore Epico</h1>
+        </div>
+
+    </header>
+    <div class="banner">
+        <a href="https://epicode.com/it/">
+            
+                <h2>Con <span>Epicode</span> ottieni subito i tuoi risultati!</h2>
+            
+        </a>
+    </div>
+
+
+    <div class="container">
+
+        <div class="calcolatore">
+
+            <div class="display-container">
+                <input type="text" id="display">
+            </div>
+
+
+            <div class="tastierino">
+
+                <div class="checkbox">
+                    <label for="check"><i class="lni lni-chevron-up"></i></label>
+                    <input type="checkbox" name="check" id="check">
+
+                    <div class="advanced-box">
+                        <input type="button" id="openBracket" value="(" class="button advanced" onclick="n(this.value)">
+                        <input type="button" id="closeBracket" value=")" class="button advanced"
+                            onclick="n(this.value)"></td>
+                        <input type="button" id="square" value="√" class="button advanced" onclick="square()">
+                        <td><input type="button" id="power2" value="x&#178" class="button advanced" onclick="power()">
+                    </div>
+                </div>
+                <table>
+
+                    <tr>
+                        <td><input type="button" id="sette" value="7" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="otto" value="8" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="nove" value="9" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="divisione" value="/" class="button" onclick="n(this.value)">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="quattro" value="4" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="cinque" value="5" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="sei" value="6" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="moltiplicazione" value="*" class="button" onclick="n(this.value)">
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><input type="button" id="uno" value="1" class="button" onclick="n(this.value)"></td>
+                        <td><input type="button" id="due" value="2" class="button" onclick="n(this.value)"></td>
+                        <td> <input type="button" id="tre" value="3" class="button" onclick="n(this.value)"></td>
+                        <td> <input type="button" id="sottrazione" value="-" class="button" onclick="n(this.value)">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <input type="button" id="C" value="C" class="button" onclick="clean()"></td>
+                        <td> <input type="button" id="zero" value="0" class="button" onclick="n(this.value)"></td>
+                        <td> <input type="button" id="punto" value="." class="button" onclick="n(this.value)"></td>
+                        <td rowspan="2"><input type="button" id="addizione" value="+" class="button"
+                                onclick="n(this.value)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="button" id="uguale" class="button" value="=" onclick="result()">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div>
+            <p>Gerardo Di Letizia ©</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
